@@ -1,0 +1,42 @@
+{
+  "app": {
+    "name": "BLOOM BRUTAL",
+    "version": "1.0.0",
+    "description": "Neo-Brutalism Florist Website - Bold Flowers for Bold People",
+    "author": "Bloom Brutal",
+    "email": "orders@bloombrutal.com",
+    "phone": "+1 (555) 123-4567",
+    "address": "123 BRUTAL ST, NYC"
+  },
+  "features": {
+    "search": false,
+    "categories": true,
+    "cart": true,
+    "userAuth": false,
+    "checkout": true,
+    "responsive": true,
+    "notifications": true,
+    "arrangements": true,
+    "customOrders": true
+  },
+  "settings": {
+    "productsPerPage": 8,
+    "currency": "$",
+    "language": "en",
+    "theme": {
+      "primaryColor": "#DC143C",
+      "secondaryColor": "#2C2C2C",
+      "successColor": "#2C2C2C",
+      "errorColor": "#DC143C",
+      "warningColor": "#FFD700",
+      "backgroundColor": "#FFFFFF",
+      "textColor": "#000000"
+    }
+  },
+  "social": {
+    "instagram": "#",
+    "twitter": "#",
+    "facebook": "#",
+    "pinterest": "#"
+  }
+}
