@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,7 +29,7 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <h1>BLOOM</h1>
+                    <h1 class="typewriter">BLOOM</h1>
                     <span class="logo-subtitle">BRUTAL</span>
                 </div>
                 <nav class="nav">
@@ -75,13 +75,13 @@
                         <span class="rating">4.8/5 Müşteri Memnuniyeti</span>
                     </div>
                     <h1 class="hero-title">
-                        <span class="title-part-1">Her Anı</span>
-                        <span class="title-part-2">Çiçeklerle</span>
-                        <span class="title-part-3">Taçlandırın</span>
+                        <span class="title-part-1">Çiçekçi</span>
+                        <span class="title-part-2">Dükkanımızda</span>
+                        <span class="title-part-3">Sizi Bekliyoruz</span>
                         <span class="star-icon">★</span>
                     </h1>
                     <p class="hero-description">
-                        Sevdiklerinize en taze çiçekleri gönderin. Özel günlerinizi unutulmaz kılacak eşsiz buketler ve aranjmanlar.
+                        Modern çiçekçi dükkanımızda en taze çiçekleri bulun. Özel günlerinizi unutulmaz kılacak eşsiz buketler ve aranjmanlar.
                     </p>
                     <div class="hero-buttons">
                         <button class="btn btn-primary" onclick="scrollToProducts()">
@@ -95,7 +95,7 @@
                 <div class="hero-image">
                     <div class="discount-badge">20% İndirim</div>
                     <div class="hero-flower">
-                        <img src="images/rose-bouquet.jpg" alt="Güzel Gül Buketi" class="hero-flower-img">
+                        <img src="images/florist-shop-hero.jpg" alt="Çiçekçi Dükkanı" class="hero-flower-img">
                     </div>
                 </div>
             </div>
@@ -119,7 +119,7 @@
                     </select>
                 </div>
             </div>
-            <div class="products-grid" id="productsGrid">
+            <div class="products-grid stagger-animation" id="productsGrid">
                 <!-- Products will be loaded dynamically -->
             </div>
         </div>
@@ -129,7 +129,7 @@
     <section id="arrangements" class="arrangements">
         <div class="container">
             <h2>ÖZEL DÜZENLEMELER</h2>
-            <div class="arrangements-grid" id="arrangementsGrid">
+            <div class="arrangements-grid stagger-animation" id="arrangementsGrid">
                 <!-- Arrangements will be loaded dynamically -->
             </div>
         </div>
@@ -140,7 +140,7 @@
         <div class="container">
             <h2>ÇİÇEK GALERİSİ</h2>
             <p class="gallery-subtitle">CESUR DÜZENLEMELER BRUTALİST TARZDA</p>
-            <div class="gallery-grid">
+            <div class="gallery-grid stagger-animation">
                 <div class="gallery-item">
                     <img src="images/rose-bouquet.jpg" alt="Gül Buketi" class="gallery-img">
                     <div class="gallery-overlay">
@@ -175,6 +175,54 @@
                     <img src="images/carnation-bouquet.jpg" alt="Karanfil Buketi" class="gallery-img">
                     <div class="gallery-overlay">
                         <h3>KARANFİL BUKETİ</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gerbera-bouquet.jpg" alt="Gerbera Buketi" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3>GERBERA BUKETİ</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/mixed-bouquet.jpg" alt="Karışık Buket" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3>KARIŞIK BUKET</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/sunflower-bouquet.jpg" alt="Ayçiçeği Buketi" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3>AYÇİÇEĞİ BUKETİ</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/orchid-bouquet.jpg" alt="Orkide Buketi" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3>ORKİDE BUKETİ</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/carnation-bouquet.jpg" alt="Karanfil Buketi" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3>KARANFİL BUKETİ</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/mirror-rose-bouquet.jpg" alt="Aynalı Beyaz Gül Buketi" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3>AYNALI BEYAZ GÜL BUKETİ</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/peony-arrangement.jpg" alt="Pembe Şakayık Aranjmanı" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3>PEMBE ŞAKAYIK ARANJMANI</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/florist-showcase.jpg" alt="Çiçekçi Vitrin Koleksiyonu" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h3>ÇİÇEKÇİ VİTRİN KOLEKSİYONU</h3>
                     </div>
                 </div>
             </div>
@@ -289,13 +337,13 @@
     <div id="cartModal" class="modal">
         <div class="modal-content cart-modal">
             <span class="close">&times;</span>
-            <h2>YOUR CART</h2>
+            <h2>SEPETİNİZ</h2>
             <div id="cartItems" class="cart-items">
                 <!-- Cart items will be loaded here -->
             </div>
             <div class="cart-total">
-                <h3>TOTAL: <span id="cartTotal">$0</span></h3>
-                <button class="btn btn-primary" id="checkoutBtn">CHECKOUT</button>
+                <h3>TOPLAM: <span id="cartTotal">₺0</span></h3>
+                <button class="btn btn-primary" id="checkoutBtn">SATIN AL</button>
             </div>
         </div>
     </div>
