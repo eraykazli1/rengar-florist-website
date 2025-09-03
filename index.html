@@ -47,13 +47,7 @@
                         <input type="text" placeholder="Gül buketi ara..." class="search-input">
                         <i class="fas fa-search"></i>
                     </div>
-                    <button class="btn-icon">
-                        <i class="fas fa-cog"></i>
-                    </button>
-                    <button class="btn-icon">
-                        <i class="fas fa-heart"></i>
-                    </button>
-                    <button class="btn-icon" id="cartBtn">
+                    <button class="btn-icon" onclick="app.toggleCartModal()">
                         <i class="fas fa-shopping-cart"></i>
                         <span class="cart-count" id="cartCount">0</span>
                     </button>
@@ -88,31 +82,42 @@
                             Çiçekleri Keşfet →
                         </button>
                         <button class="btn btn-secondary">
-                            Özel Koleksiyonlar
+                            Hemen Sipariş Ver
                         </button>
                     </div>
                 </div>
                 <div class="hero-image">
                     <div class="discount-badge">20% İndirim</div>
                     <div class="hero-flower">
-                        <img src="images/florist-shop-hero.jpg" alt="Çiçekçi Dükkanı" class="hero-flower-img">
+                        <img src="https://images.unsplash.com/photo-1563241527-3004b7be99c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Çiçekçi Dükkanı" class="hero-flower-img">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Product Showcase Section -->
+    <!-- Products Section -->
     <section id="products" class="products">
         <div class="container">
             <div class="section-header">
-                <h2>FLOWER COLLECTION</h2>
-                <div class="filter-controls">
-                    <select id="categoryFilter">
-                        <option value="">ALL CATEGORIES</option>
-                    </select>
-                    <select id="sortFilter">
-                        <option value="name">NAME</option>
+                <h2>ÇİÇEK KOLEKSİYONU</h2>
+                <p>DOĞAL GÜZELLİK VE BRUTALİST TASARIM</p>
+            </div>
+            <div class="products-controls">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-category="all">TÜMÜ</button>
+                    <button class="filter-btn" data-category="1">GÜLLER</button>
+                    <button class="filter-btn" data-category="2">LALELER</button>
+                    <button class="filter-btn" data-category="3">ZAMBAKLAR</button>
+                    <button class="filter-btn" data-category="4">AYÇİÇEKLERİ</button>
+                    <button class="filter-btn" data-category="5">ORKİDELER</button>
+                    <button class="filter-btn" data-category="6">KARANFİLLER</button>
+                    <button class="filter-btn" data-category="7">GERBERALAR</button>
+                    <button class="filter-btn" data-category="8">KARIŞIK</button>
+                </div>
+                <div class="sort-controls">
+                    <select id="sortSelect" class="sort-select">
+                        <option value="default">SIRALAMA</option>
                         <option value="price-low">PRICE LOW-HIGH</option>
                         <option value="price-high">PRICE HIGH-LOW</option>
                         <option value="rating">RATING</option>
@@ -142,85 +147,55 @@
             <p class="gallery-subtitle">CESUR DÜZENLEMELER BRUTALİST TARZDA</p>
             <div class="gallery-grid stagger-animation">
                 <div class="gallery-item">
-                    <img src="images/rose-bouquet.jpg" alt="Gül Buketi" class="gallery-img">
+                    <img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Gül Buketi" class="gallery-img">
                     <div class="gallery-overlay">
                         <h3>GÜL BUKETİ</h3>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="images/tulip-bouquet.jpg" alt="Lale Buketi" class="gallery-img">
+                    <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Lale Buketi" class="gallery-img">
                     <div class="gallery-overlay">
                         <h3>LALE BUKETİ</h3>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="images/lily-bouquet.jpg" alt="Zambak Buketi" class="gallery-img">
+                    <img src="https://images.unsplash.com/photo-1563241527-3004b7be99c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Zambak Buketi" class="gallery-img">
                     <div class="gallery-overlay">
                         <h3>ZAMBAK BUKETİ</h3>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="images/sunflower-bouquet.jpg" alt="Ayçiçeği Buketi" class="gallery-img">
+                    <img src="https://images.unsplash.com/photo-1597848212624-e17eb5d5a3e4?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Ayçiçeği Buketi" class="gallery-img">
                     <div class="gallery-overlay">
                         <h3>AYÇİÇEĞİ BUKETİ</h3>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="images/orchid-bouquet.jpg" alt="Orkide Buketi" class="gallery-img">
+                    <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Orkide Buketi" class="gallery-img">
                     <div class="gallery-overlay">
                         <h3>ORKİDE BUKETİ</h3>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="images/carnation-bouquet.jpg" alt="Karanfil Buketi" class="gallery-img">
+                    <img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Karanfil Buketi" class="gallery-img">
                     <div class="gallery-overlay">
                         <h3>KARANFİL BUKETİ</h3>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="images/gerbera-bouquet.jpg" alt="Gerbera Buketi" class="gallery-img">
-                    <div class="gallery-overlay">
-                        <h3>GERBERA BUKETİ</h3>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/mixed-bouquet.jpg" alt="Karışık Buket" class="gallery-img">
-                    <div class="gallery-overlay">
-                        <h3>KARIŞIK BUKET</h3>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/sunflower-bouquet.jpg" alt="Ayçiçeği Buketi" class="gallery-img">
-                    <div class="gallery-overlay">
-                        <h3>AYÇİÇEĞİ BUKETİ</h3>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/orchid-bouquet.jpg" alt="Orkide Buketi" class="gallery-img">
-                    <div class="gallery-overlay">
-                        <h3>ORKİDE BUKETİ</h3>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/carnation-bouquet.jpg" alt="Karanfil Buketi" class="gallery-img">
-                    <div class="gallery-overlay">
-                        <h3>KARANFİL BUKETİ</h3>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/mirror-rose-bouquet.jpg" alt="Aynalı Beyaz Gül Buketi" class="gallery-img">
+                    <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Aynalı Beyaz Gül Buketi" class="gallery-img">
                     <div class="gallery-overlay">
                         <h3>AYNALI BEYAZ GÜL BUKETİ</h3>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="images/peony-arrangement.jpg" alt="Pembe Şakayık Aranjmanı" class="gallery-img">
+                    <img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Pembe Şakayık Aranjmanı" class="gallery-img">
                     <div class="gallery-overlay">
                         <h3>PEMBE ŞAKAYIK ARANJMANI</h3>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="images/florist-showcase.jpg" alt="Çiçekçi Vitrin Koleksiyonu" class="gallery-img">
+                    <img src="https://images.unsplash.com/photo-1563241527-3004b7be99c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Çiçekçi Vitrin Koleksiyonu" class="gallery-img">
                     <div class="gallery-overlay">
                         <h3>ÇİÇEKÇİ VİTRİN KOLEKSİYONU</h3>
                     </div>
@@ -250,49 +225,63 @@
                             <i class="fas fa-leaf"></i>
                         </div>
                         <h3>LOCAL SOURCED</h3>
-                        <p>SUSTAINABLE ÇİÇEKLER FROM LOCAL FARMS</p>
+                        <p>SUSTAINABLE FLOWERS FROM LOCAL FARMS</p>
                     </div>
                     <div class="feature">
                         <div class="feature-icon">
-                            <i class="fas fa-palette"></i>
+                            <i class="fas fa-heart"></i>
                         </div>
-                        <h3>BOLD DESIGNS</h3>
-                        <p>UNIQUE DÜZENLEMELER FOR BOLD INDIVIDUALS</p>
+                        <h3>HANDCRAFTED</h3>
+                        <p>EVERY ARRANGEMENT IS UNIQUELY CRAFTED</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact & Order Section -->
+    <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
             <div class="contact-content">
                 <div class="contact-info">
-                    <h2>SİPARİŞ NOW</h2>
+                    <h2>İLETİŞİM</h2>
                     <div class="contact-details">
                         <div class="contact-item">
-                            <span class="contact-label">PHONE</span>
-                            <span class="contact-value">+1 (555) 123-4567</span>
+                            <span class="contact-label">ADRES</span>
+                            <span class="contact-value">İlkadım Mahallesi, Çiçek Sokak No:123, Samsun</span>
                         </div>
                         <div class="contact-item">
-                            <span class="contact-label">EMAIL</span>
-                            <span class="contact-value">orders@bloombrutal.com</span>
+                            <span class="contact-label">TELEFON</span>
+                            <span class="contact-value">+90 362 55 0123</span>
                         </div>
                         <div class="contact-item">
-                            <span class="contact-label">ADDRESS</span>
-                            <span class="contact-value">123 BRUTAL ST, NYC</span>
+                            <span class="contact-label">E-POSTA</span>
+                            <span class="contact-value">info@bloombrutal.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">ÇALIŞMA SAATLERİ</span>
+                            <span class="contact-value">Pazartesi - Cumartesi: 08:00 - 20:00</span>
                         </div>
                     </div>
                 </div>
-                <form class="order-form" id="orderForm">
-                    <h3>CUSTOM SİPARİŞ</h3>
-                    <input type="text" placeholder="YOUR NAME" required>
-                    <input type="email" placeholder="EMAIL ADDRESS" required>
-                    <input type="tel" placeholder="PHONE NUMBER" required>
-                    <textarea placeholder="DESCRIBE YOUR VISION" required></textarea>
-                    <button type="submit" class="btn btn-primary">SUBMIT SİPARİŞ</button>
-                </form>
+                <div class="contact-form">
+                    <h3>ÖZEL SİPARİŞ VER</h3>
+                    <form id="customOrderForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Adınız" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="E-posta" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Telefon" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Özel istekleriniz..." rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">SİPARİŞ VER</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -303,31 +292,36 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>BLOOM BRUTAL</h3>
-                    <p>BOLD ÇİÇEKLER FOR BOLD PEOPLE</p>
+                    <p>Modern çiçekçilik anlayışı ile doğal güzelliği birleştiren eşsiz tasarımlar.</p>
                 </div>
                 <div class="footer-section">
-                    <h4>QUICK LINKS</h4>
+                    <h4>HIZLI LİNKLER</h4>
                     <ul>
-                        <li><a href="#home">HOME</a></li>
-                        <li><a href="#products">ÇİÇEKLER</a></li>
-                        <li><a href="#arrangements">DÜZENLEMELER</a></li>
-                        <li><a href="#gallery">GALERİ</a></li>
-                        <li><a href="#about">ABOUT</a></li>
-                        <li><a href="#contact">SİPARİŞ</a></li>
+                        <li><a href="#home">Ana Sayfa</a></li>
+                        <li><a href="#products">Çiçekler</a></li>
+                        <li><a href="#arrangements">Koleksiyonlar</a></li>
+                        <li><a href="#gallery">Galeri</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>FOLLOW US</h4>
+                    <h4>İLETİŞİM</h4>
+                    <ul>
+                        <li><a href="tel:+90362550123">+90 362 55 0123</a></li>
+                        <li><a href="mailto:info@bloombrutal.com">info@bloombrutal.com</a></li>
+                        <li>Samsun, İlkadım</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>SOSYAL MEDYA</h4>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 BLOOM BRUTAL. ALL RIGHTS RESERVED.</p>
+                <p>&copy; 2024 BLOOM BRUTAL. Tüm hakları saklıdır.</p>
             </div>
         </div>
     </footer>
@@ -350,14 +344,15 @@
 
     <!-- Product Detail Modal -->
     <div id="productModal" class="modal">
-        <div class="modal-content product-modal">
+        <div class="modal-content product-detail-modal">
             <span class="close">&times;</span>
-            <div id="productDetail">
-                <!-- Product details will be loaded here -->
+            <div id="productDetailContent">
+                <!-- Product detail will be loaded here -->
             </div>
         </div>
     </div>
 
     <script src="js/app.js"></script>
 </body>
+</html>
 </html>

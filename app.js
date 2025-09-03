@@ -42,7 +42,7 @@ class BloomBrutalApp {
                 categoryId: 1,
                 rating: 4.9,
                 reviews: 67,
-                image: 'images/rose-bouquet.jpg',
+                image: 'https://images.unsplash.com/photo-1518895949257-7621c3c786d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
                 inStock: true,
                 isFeatured: true
             },
@@ -55,7 +55,7 @@ class BloomBrutalApp {
                 categoryId: 2,
                 rating: 4.8,
                 reviews: 43,
-                image: 'images/tulip-bouquet.jpg',
+                image: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
                 inStock: true,
                 isFeatured: true
             },
@@ -68,7 +68,7 @@ class BloomBrutalApp {
                 categoryId: 3,
                 rating: 4.7,
                 reviews: 89,
-                image: 'images/lily-bouquet.jpg',
+                image: 'https://images.unsplash.com/photo-1563241527-3004b7be99c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
                 inStock: true,
                 isFeatured: false
             },
@@ -81,20 +81,20 @@ class BloomBrutalApp {
                 categoryId: 4,
                 rating: 4.6,
                 reviews: 56,
-                image: 'images/sunflower-bouquet.jpg',
+                image: 'https://images.unsplash.com/photo-1597848212624-e17eb5d5a3e4?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
                 inStock: true,
-                isFeatured: true
+                isFeatured: false
             },
             {
                 id: 5,
                 title: 'Orkide Buketi',
-                description: 'Egzotik orkidelerden hazırlanmış lüks buket. Zarafet ve şıklık.',
+                description: 'Egzotik orkidelerden hazırlanmış lüks buket. Benzersiz güzellik.',
                 price: 95,
                 category: 'Orkideler',
                 categoryId: 5,
                 rating: 4.8,
-                reviews: 34,
-                image: 'images/orchid-bouquet.jpg',
+                reviews: 78,
+                image: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
                 inStock: true,
                 isFeatured: false
             },
@@ -102,25 +102,25 @@ class BloomBrutalApp {
                 id: 6,
                 title: 'Karanfil Buketi',
                 description: 'Renkli karanfillerden oluşan güzel buket. Sevgi ve saygının simgesi.',
-                price: 150,
+                price: 55,
                 category: 'Karanfiller',
                 categoryId: 6,
-                rating: 5.0,
-                reviews: 23,
-                image: 'images/carnation-bouquet.jpg',
+                rating: 4.5,
+                reviews: 45,
+                image: 'https://images.unsplash.com/photo-1518895949257-7621c3c786d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
                 inStock: true,
-                isFeatured: true
+                isFeatured: false
             },
             {
                 id: 7,
                 title: 'Gerbera Buketi',
-                description: 'Parlak gerberalardan hazırlanmış renkli buket. Neşe ve mutluluk.',
-                price: 110,
+                description: 'Parlak gerberalardan oluşan neşeli buket. Mutluluk ve enerji.',
+                price: 70,
                 category: 'Gerberalar',
                 categoryId: 7,
-                rating: 4.9,
+                rating: 4.7,
                 reviews: 78,
-                image: 'images/gerbera-bouquet.jpg',
+                image: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
                 inStock: true,
                 isFeatured: false
             },
@@ -133,7 +133,7 @@ class BloomBrutalApp {
                 categoryId: 8,
                 rating: 4.5,
                 reviews: 45,
-                image: 'images/mixed-bouquet.jpg',
+                image: 'https://images.unsplash.com/photo-1518895949257-7621c3c786d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
                 inStock: true,
                 isFeatured: false
             },
@@ -146,7 +146,7 @@ class BloomBrutalApp {
                 categoryId: 1,
                 rating: 4.9,
                 reviews: 89,
-                image: 'images/mirror-rose-bouquet.jpg',
+                image: 'https://images.unsplash.com/photo-1518895949257-7621c3c786d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
                 inStock: true,
                 isFeatured: true
             },
@@ -159,7 +159,7 @@ class BloomBrutalApp {
                 categoryId: 8,
                 rating: 4.8,
                 reviews: 67,
-                image: 'images/peony-arrangement.jpg',
+                image: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
                 inStock: true,
                 isFeatured: true
             },
@@ -172,7 +172,7 @@ class BloomBrutalApp {
                 categoryId: 8,
                 rating: 4.7,
                 reviews: 45,
-                image: 'images/florist-showcase.jpg',
+                image: 'https://images.unsplash.com/photo-1563241527-3004b7be99c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
                 inStock: true,
                 isFeatured: false
             }
@@ -184,7 +184,7 @@ class BloomBrutalApp {
                 title: 'Lüks Gül Düzenlemesi',
                 description: 'Özel günler için hazırlanmış lüks gül düzenlemesi. Zarafet ve şıklık.',
                 price: 200,
-                image: 'images/rose-bouquet.jpg',
+                image: 'https://images.unsplash.com/photo-1518895949257-7621c3c786d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
                 isPopular: true
             },
             {
@@ -192,7 +192,7 @@ class BloomBrutalApp {
                 title: 'Bahar Buketi',
                 description: 'Baharın en güzel çiçeklerinden oluşan neşeli buket. Doğal güzellik.',
                 price: 175,
-                image: 'images/tulip-bouquet.jpg',
+                image: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
                 isPopular: true
             },
             {
@@ -200,7 +200,7 @@ class BloomBrutalApp {
                 title: 'Egzotik Düzenleme',
                 description: 'Egzotik çiçeklerden hazırlanmış özel düzenleme. Benzersiz güzellik.',
                 price: 225,
-                image: 'images/orchid-bouquet.jpg',
+                image: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
                 isPopular: false
             },
             {
@@ -208,7 +208,7 @@ class BloomBrutalApp {
                 title: 'Aynalı Lüks Aranjman',
                 description: 'Merkezinde ayna bulunan beyaz gül aranjmanı. Özel günler için mükemmel.',
                 price: 300,
-                image: 'images/mirror-rose-bouquet.jpg',
+                image: 'https://images.unsplash.com/photo-1518895949257-7621c3c786d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
                 isPopular: true
             },
             {
@@ -216,7 +216,7 @@ class BloomBrutalApp {
                 title: 'Şakayık Bahçesi',
                 description: 'Pembe ve krem şakayıklardan oluşan zarif bahçe aranjmanı.',
                 price: 280,
-                image: 'images/peony-arrangement.jpg',
+                image: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
                 isPopular: true
             }
         ];
@@ -225,62 +225,69 @@ class BloomBrutalApp {
     // Event Listeners
     setupEventListeners() {
         // Filter functionality
-        document.getElementById('categoryFilter').addEventListener('change', () => this.filterProducts());
-        document.getElementById('sortFilter').addEventListener('change', () => this.sortProducts());
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                e.target.classList.add('active');
+                this.filterProducts(e.target.dataset.category);
+            });
+        });
 
-        // Modal functionality
-        this.setupModalListeners();
+        // Sort functionality
+        document.getElementById('sortSelect').addEventListener('change', (e) => {
+            this.sortProducts(e.target.value);
+        });
 
-        // Cart functionality
-        document.getElementById('cartBtn').addEventListener('click', () => this.toggleCartModal());
+        // Cart modal
+        document.getElementById('cartModal').addEventListener('click', (e) => {
+            if (e.target.id === 'cartModal') {
+                this.toggleCartModal();
+            }
+        });
 
-        // Forms
-        document.getElementById('orderForm').addEventListener('submit', (e) => this.handleOrder(e));
+        // Product modal
+        document.getElementById('productModal').addEventListener('click', (e) => {
+            if (e.target.id === 'productModal') {
+                this.toggleProductModal();
+            }
+        });
+
+        // Close buttons
+        document.querySelectorAll('.close').forEach(btn => {
+            btn.addEventListener('click', () => {
+                this.toggleCartModal();
+                this.toggleProductModal();
+            });
+        });
 
         // Checkout
-        document.getElementById('checkoutBtn').addEventListener('click', () => this.handleCheckout());
-    }
-
-    setupModalListeners() {
-        const modals = document.querySelectorAll('.modal');
-        const closeButtons = document.querySelectorAll('.close');
-
-        closeButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                modals.forEach(modal => modal.style.display = 'none');
-            });
+        document.getElementById('checkoutBtn').addEventListener('click', () => {
+            this.handleCheckout();
         });
 
-        window.addEventListener('click', (e) => {
-            modals.forEach(modal => {
-                if (e.target === modal) {
-                    modal.style.display = 'none';
-                }
-            });
+        // Custom order form
+        document.getElementById('customOrderForm').addEventListener('submit', (e) => {
+            this.handleCustomOrder(e);
         });
     }
 
-    // Product Management
+    // Render Functions
     renderProducts() {
         const productsGrid = document.getElementById('productsGrid');
-        const categoryFilter = document.getElementById('categoryFilter');
-
-        // Populate category filter
-        categoryFilter.innerHTML = '<option value="">ALL CATEGORIES</option>' +
-            this.categories.map(category => 
-                `<option value="${category.id}">${category.name}</option>`
-            ).join('');
-
-        // Render products
         productsGrid.innerHTML = this.products.map(product => `
-            <div class="product-card" onclick="app.showProductDetail(${product.id})">
+            <div class="product-card" data-category="${product.categoryId}">
                 <div class="product-image">
                     <img src="${product.image}" alt="${product.title}" class="product-img">
+                    <div class="product-overlay">
+                        <button class="btn-view" onclick="app.showProductDetail(${product.id})">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
                 </div>
                 <div class="product-info">
                     <h3 class="product-title">${product.title}</h3>
                     <p class="product-description">${product.description}</p>
-                    <div class="product-price">$${product.price}</div>
+                    <div class="product-price">₺${product.price}</div>
                     <div class="product-actions">
                         <button class="btn-add-cart" onclick="event.stopPropagation(); app.addToCart(${product.id})">
                             <i class="fas fa-cart-plus"></i> SEPETE EKLE
@@ -296,70 +303,72 @@ class BloomBrutalApp {
 
     renderArrangements() {
         const arrangementsGrid = document.getElementById('arrangementsGrid');
-        
         arrangementsGrid.innerHTML = this.arrangements.map(arrangement => `
             <div class="arrangement-card">
                 <div class="arrangement-image">
                     <img src="${arrangement.image}" alt="${arrangement.title}" class="arrangement-img">
+                    <div class="arrangement-overlay">
+                        <button class="btn-view" onclick="app.showArrangementDetail(${arrangement.id})">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
                 </div>
-                <h3 class="arrangement-title">${arrangement.title}</h3>
-                <p class="arrangement-description">${arrangement.description}</p>
-                <div class="arrangement-price">$${arrangement.price}</div>
-                <button class="btn btn-primary" onclick="app.addArrangementToCart(${arrangement.id})">
-                    ORDER NOW
-                </button>
+                <div class="arrangement-info">
+                    <h3 class="arrangement-title">${arrangement.title}</h3>
+                    <p class="arrangement-description">${arrangement.description}</p>
+                    <div class="arrangement-price">₺${arrangement.price}</div>
+                    <div class="arrangement-actions">
+                        <button class="btn-add-cart" onclick="app.addArrangementToCart(${arrangement.id})">
+                            <i class="fas fa-cart-plus"></i> SEPETE EKLE
+                        </button>
+                    </div>
+                </div>
             </div>
         `).join('');
     }
 
-    // Search and Filter
-    filterProducts() {
-        const categoryId = document.getElementById('categoryFilter').value;
-        if (categoryId) {
-            this.products = this.products.filter(product => product.categoryId == categoryId);
-        } else {
-            this.loadFloristData(); // Reset to original data
+    renderCart() {
+        const cartItems = document.getElementById('cartItems');
+        const cartTotal = document.getElementById('cartTotal');
+
+        if (this.cart.length === 0) {
+            cartItems.innerHTML = '<p style="text-align: center; color: #2C2C2C; font-weight: 700; text-transform: uppercase;">SEPETİNİZ BOŞ</p>';
+            cartTotal.textContent = '₺0';
+            return;
         }
-        this.currentPage = 1;
-        this.renderProducts();
+
+        cartItems.innerHTML = this.cart.map(item => `
+            <div class="cart-item">
+                <img src="${item.image}" alt="${item.title}" class="cart-item-img">
+                <div class="cart-item-info">
+                    <h4>${item.title}</h4>
+                    <p>₺${item.price} x ${item.quantity}</p>
+                </div>
+                <button class="btn-remove" onclick="app.removeFromCart(${item.id})">
+                    <i class="fas fa-trash"></i>
+                </button>
+            </div>
+        `).join('');
+
+        const total = this.cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+        cartTotal.textContent = `₺${total}`;
     }
 
-    sortProducts() {
-        const sortBy = document.getElementById('sortFilter').value;
-        
-        switch (sortBy) {
-            case 'name':
-                this.products.sort((a, b) => a.title.localeCompare(b.title));
-                break;
-            case 'price-low':
-                this.products.sort((a, b) => a.price - b.price);
-                break;
-            case 'price-high':
-                this.products.sort((a, b) => b.price - a.price);
-                break;
-            case 'rating':
-                this.products.sort((a, b) => b.rating - a.rating);
-                break;
-        }
-        
-        this.currentPage = 1;
-        this.renderProducts();
-    }
-
-    // Product Detail
     showProductDetail(productId) {
         const product = this.products.find(p => p.id === productId);
         if (!product) return;
 
-        const productDetail = document.getElementById('productDetail');
-        productDetail.innerHTML = `
+        const modal = document.getElementById('productModal');
+        const content = document.getElementById('productDetailContent');
+        
+        content.innerHTML = `
             <div class="product-detail">
                 <div class="product-detail-image">
                     <img src="${product.image}" alt="${product.title}" class="product-detail-img">
                 </div>
                 <div class="product-detail-info">
                     <h2>${product.title}</h2>
-                    <div class="product-detail-price">$${product.price}</div>
+                    <div class="product-detail-price">₺${product.price}</div>
                     <p class="product-detail-description">${product.description}</p>
                     <div class="product-detail-actions">
                         <button class="btn btn-primary" onclick="app.addToCart(${product.id}); app.toggleCartModal();">
@@ -372,11 +381,11 @@ class BloomBrutalApp {
                 </div>
             </div>
         `;
-
-        document.getElementById('productModal').style.display = 'block';
+        
+        modal.style.display = 'block';
     }
 
-    // Cart Management
+    // Cart Functions
     addToCart(productId) {
         const product = this.products.find(p => p.id === productId);
         if (!product) return;
@@ -386,10 +395,7 @@ class BloomBrutalApp {
             existingItem.quantity += 1;
         } else {
             this.cart.push({
-                id: product.id,
-                title: product.title,
-                price: product.price,
-                image: product.image,
+                ...product,
                 quantity: 1
             });
         }
@@ -403,15 +409,12 @@ class BloomBrutalApp {
         const arrangement = this.arrangements.find(a => a.id === arrangementId);
         if (!arrangement) return;
 
-        const existingItem = this.cart.find(item => item.id === `arrangement-${arrangementId}`);
+        const existingItem = this.cart.find(item => item.id === arrangementId);
         if (existingItem) {
             existingItem.quantity += 1;
         } else {
             this.cart.push({
-                id: `arrangement-${arrangement.id}`,
-                title: arrangement.title,
-                price: arrangement.price,
-                image: arrangement.icon,
+                ...arrangement,
                 quantity: 1
             });
         }
@@ -428,49 +431,8 @@ class BloomBrutalApp {
         this.renderCart();
     }
 
-    updateCartQuantity(productId, newQuantity) {
-        const item = this.cart.find(item => item.id === productId);
-        if (item) {
-            if (newQuantity <= 0) {
-                this.removeFromCart(productId);
-            } else {
-                item.quantity = newQuantity;
-                this.saveCart();
-                this.renderCart();
-            }
-        }
-    }
-
-    renderCart() {
-        const cartItems = document.getElementById('cartItems');
-        const cartTotal = document.getElementById('cartTotal');
-
-        if (this.cart.length === 0) {
-            cartItems.innerHTML = '<p style="text-align: center; color: #2C2C2C; font-weight: 700; text-transform: uppercase;">SEPETİNİZ BOŞ</p>';
-            cartTotal.textContent = '₺0';
-            return;
-        }
-
-        cartItems.innerHTML = this.cart.map(item => `
-            <div class="cart-item">
-                <div class="cart-item-image">
-                    <img src="${item.image}" alt="${item.title}" class="cart-item-img">
-                </div>
-                <div class="cart-item-info">
-                    <div class="cart-item-title">${item.title}</div>
-                    <div class="cart-item-price">$${item.price}</div>
-                </div>
-                <div class="cart-item-controls">
-                    <button class="quantity-btn" onclick="app.updateCartQuantity('${item.id}', ${item.quantity - 1})">-</button>
-                    <span class="quantity">${item.quantity}</span>
-                    <button class="quantity-btn" onclick="app.updateCartQuantity('${item.id}', ${item.quantity + 1})">+</button>
-                    <button class="remove-btn" onclick="app.removeFromCart('${item.id}')">REMOVE</button>
-                </div>
-            </div>
-        `).join('');
-
-        const total = this.cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-        cartTotal.textContent = `$${total}`;
+    saveCart() {
+        localStorage.setItem('cart', JSON.stringify(this.cart));
     }
 
     updateCartCount() {
@@ -478,20 +440,58 @@ class BloomBrutalApp {
         document.getElementById('cartCount').textContent = count;
     }
 
-    saveCart() {
-        localStorage.setItem('cart', JSON.stringify(this.cart));
-    }
-
-    // Modal Management
     toggleCartModal() {
-        this.renderCart();
-        document.getElementById('cartModal').style.display = 'block';
+        const modal = document.getElementById('cartModal');
+        if (modal.style.display === 'block') {
+            modal.style.display = 'none';
+        } else {
+            this.renderCart();
+            modal.style.display = 'block';
+        }
     }
 
-    // Order Form
-    handleOrder(e) {
+    toggleProductModal() {
+        const modal = document.getElementById('productModal');
+        modal.style.display = modal.style.display === 'block' ? 'none' : 'block';
+    }
+
+    // Filter and Sort
+    filterProducts(categoryId) {
+        const cards = document.querySelectorAll('.product-card');
+        cards.forEach(card => {
+            if (categoryId === 'all' || card.dataset.category === categoryId) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
+
+    sortProducts(sortBy) {
+        let sortedProducts = [...this.products];
+        
+        switch(sortBy) {
+            case 'price-low':
+                sortedProducts.sort((a, b) => a.price - b.price);
+                break;
+            case 'price-high':
+                sortedProducts.sort((a, b) => b.price - a.price);
+                break;
+            case 'rating':
+                sortedProducts.sort((a, b) => b.rating - a.rating);
+                break;
+            default:
+                return;
+        }
+        
+        this.products = sortedProducts;
+        this.renderProducts();
+    }
+
+    // Custom Order
+    handleCustomOrder(e) {
         e.preventDefault();
-        this.showNotification('Your custom order has been submitted! We will contact you within 24 hours.', 'success');
+        this.showNotification('Özel siparişiniz başarıyla alındı! 24 saat içinde sizinle iletişime geçeceğiz.', 'success');
         e.target.reset();
     }
 
@@ -549,27 +549,32 @@ class BloomBrutalApp {
 
         document.body.appendChild(notification);
 
-        // Remove after 4 seconds
+        // Animate in
         setTimeout(() => {
-            notification.style.animation = 'slideOutRight 0.3s ease';
+            notification.style.transform = 'translateX(0)';
+        }, 100);
+
+        // Remove after 3 seconds
+        setTimeout(() => {
+            notification.style.transform = 'translateX(100%)';
             setTimeout(() => {
                 if (notification.parentNode) {
                     notification.parentNode.removeChild(notification);
                 }
             }, 300);
-        }, 4000);
+        }, 3000);
     }
 }
 
-// Utility function for smooth scrolling
+// Initialize app
+const app = new BloomBrutalApp();
+
+// Global functions
 function scrollToProducts() {
     document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
 }
 
-// Initialize the application
-const app = new BloomBrutalApp();
-
-// Add CSS animations for notifications
+// Add CSS animations dynamically
 const style = document.createElement('style');
 style.textContent = `
     @keyframes slideInRight {
